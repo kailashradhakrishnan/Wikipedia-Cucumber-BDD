@@ -1,0 +1,33 @@
+
+
+Summary - I have automated 3 scenarios in UI Automation for Wikipedia search page using Cucumber BDD framework with Selenium-Jnuit-Java. 
+		  I have also implemented cucumber extent report and PDF reports for the outputs.
+
+Framework Details :
+
+ 1. src/main/java
+ 
+ 		Contains Utils package with Base class. Base class contains driver initialization method to start the chrome browser 
+ 		and to launch the url. I have also created a constructor to read the property file.
+ 		
+ 2. src/test/java
+ 
+ 		Contains below folders
+ 		
+ 		a. Feature files - Contains all scenarios in Gherkin language with input data's
+ 		b. Page Objects - Contains Class files with Page names. All the methods are segregated according the POM model.
+ 		c. runner File - Contains path of feature files and stepdefinition files. Just right click and RunAs Junit will execute all the scenarios.
+ 		d. Stepdefinintion Files - Contains all the methods from Page objects and it is segregated according to the BDD with Given/When/Then etc.
+ 		
+ 3. src/test/resources
+ 
+ 		Contains below files
+ 		
+ 		a. config.properties - Contains the base url and browser details.
+ 		b. extent.properties - Configuration file for extent report in pdf and html format.
+ 		c. extent-config.xml - configuration file for pdf report theme.
+ 		
+ 4. POM.xml - Contains all the Maven dependencies which is required for the project. I have also added some extra dependencies like
+ 			  apache poi to read and write data from excel.
+ 
+ 
